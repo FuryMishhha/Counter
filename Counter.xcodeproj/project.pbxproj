@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3F38616825F35E97006E5A55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F38616725F35E97006E5A55 /* AppDelegate.swift */; };
-		3F38616A25F35E97006E5A55 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F38616925F35E97006E5A55 /* SceneDelegate.swift */; };
 		3F38616C25F35E97006E5A55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F38616B25F35E97006E5A55 /* ViewController.swift */; };
-		3F38616F25F35E97006E5A55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F38616D25F35E97006E5A55 /* Main.storyboard */; };
 		3F38617125F35E9E006E5A55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F38617025F35E9E006E5A55 /* Assets.xcassets */; };
 		3F38617425F35E9E006E5A55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F38617225F35E9E006E5A55 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -18,9 +16,7 @@
 /* Begin PBXFileReference section */
 		3F38616425F35E97006E5A55 /* Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Counter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F38616725F35E97006E5A55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3F38616925F35E97006E5A55 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3F38616B25F35E97006E5A55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3F38616E25F35E97006E5A55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F38617025F35E9E006E5A55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F38617325F35E9E006E5A55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F38617525F35E9E006E5A55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,9 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				3F38616725F35E97006E5A55 /* AppDelegate.swift */,
-				3F38616925F35E97006E5A55 /* SceneDelegate.swift */,
 				3F38616B25F35E97006E5A55 /* ViewController.swift */,
-				3F38616D25F35E97006E5A55 /* Main.storyboard */,
 				3F38617025F35E9E006E5A55 /* Assets.xcassets */,
 				3F38617225F35E9E006E5A55 /* LaunchScreen.storyboard */,
 				3F38617525F35E9E006E5A55 /* Info.plist */,
@@ -126,7 +120,6 @@
 			files = (
 				3F38617425F35E9E006E5A55 /* LaunchScreen.storyboard in Resources */,
 				3F38617125F35E9E006E5A55 /* Assets.xcassets in Resources */,
-				3F38616F25F35E97006E5A55 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,21 +132,12 @@
 			files = (
 				3F38616C25F35E97006E5A55 /* ViewController.swift in Sources */,
 				3F38616825F35E97006E5A55 /* AppDelegate.swift in Sources */,
-				3F38616A25F35E97006E5A55 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3F38616D25F35E97006E5A55 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3F38616E25F35E97006E5A55 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3F38617225F35E9E006E5A55 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,6 +272,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Counter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,7 +280,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = PM.Counter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -306,6 +291,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Counter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,7 +299,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = PM.Counter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
